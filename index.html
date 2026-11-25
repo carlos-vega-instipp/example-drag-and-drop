@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Drag & Drop</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <main class="board">
+
+        <h1>Drag & Drop</h1>
+
+        <p class="subtitle">
+            Arrastra y organiza los elementos
+        </p>
+
+        <div class="columns">
+
+            <!-- Columna pendientes -->
+
+            <section class="column">
+
+                <h2 class="zone-title">
+                    Pendientes
+                </h2>
+
+                <div class="dropzone" id="todo">
+
+                    <article class="card" draggable="true" data-id="task-1">
+
+                        <span class="card-dot"></span>
+                        Diseñar interfaz
+
+                    </article>
+
+                    <article class="card" draggable="true" data-id="task-2">
+
+                        <span class="card-dot"></span>
+                        Crear componentes
+
+                    </article>
+
+                    <article class="card" draggable="true" data-id="task-3">
+
+                        <span class="card-dot"></span>
+                        Revisar estilos
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Columna in progress-->
+
+            <section class="column">
+
+                <h2 class="zone-title">
+                    En Progreso
+                </h2>
+
+                <div class="dropzone" id="todo">
+
+                    <article class="card" draggable="true" data-id="task-1">
+
+                        <span class="card-dot"></span>
+                        Diseñar interfaz
+
+                    </article>
+
+                    <article class="card" draggable="true" data-id="task-2">
+
+                        <span class="card-dot"></span>
+                        Crear componentes
+
+                    </article>
+
+                    <article class="card" draggable="true" data-id="task-3">
+
+                        <span class="card-dot"></span>
+                        Revisar estilos
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- Columna completados -->
+
+
+
+            <section class="column">
+
+                <h2 class="zone-title">
+                    Completados
+                </h2>
+
+                <div class="dropzone" id="done">
+
+                    <article class="card" draggable="true" data-id="task-4">
+
+                        <span class="card-dot"></span>
+                        Configurar proyecto
+
+                    </article>
+
+                    <article class="card" draggable="true" data-id="task-5">
+
+                        <span class="card-dot"></span>
+                        Crear estructura HTML
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
